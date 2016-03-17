@@ -1,7 +1,9 @@
 as a math student,I want to represent a rectangle, so that I will be able to calculate area.
 as a math student,I want to represent a rectangle, so that I will be able to calculate perimeter.
+as a math student,I want to represent a square so that I can calculate its area and perimeter.
 
-  * I have to create a class named Rectangle which can construct a rectangle with given height and width.
+
+  * I have to create a class named rectangle which can construct a rectangle with given height and width.
   * I have to create methods which can be applied on rectangle.
 
 
