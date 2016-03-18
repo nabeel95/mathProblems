@@ -27,6 +27,16 @@ public class Chance {
 
     }
 
+    
+
+    public Chance occurence(Chance otherChance) throws InvalidProbabilityException {
+        return Chance.createChance(this.chance * otherChance.chance);
+    }
+
+    public Chance notOccurence() throws InvalidProbabilityException {
+        return Chance.createChance(1.0 - this.chance);
+    }
+
     public Chance subtract(int value) throws InvalidProbabilityException {
         return createChance(value - this.chance);
     }

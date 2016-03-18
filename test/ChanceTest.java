@@ -6,7 +6,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import probability.Chance;
-import rectangle.Rectangle;
 
 import static junit.framework.TestCase.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -21,6 +20,13 @@ public class ChanceTest {
     @Test (expected = InvalidProbabilityException.class)
     public void throwsExceptionWhenNegativeNumbersAreGiven() throws InvalidProbabilityException {
         chance = Chance.createChance(1.1);
+    }
+
+    @Test
+    public void throwsExceptionIfNonPositiveNumberProvided() throws InvalidProbabilityException {
+        thrown.expect(InvalidProbabilityException.class);
+        thrown.expectMessage("Invalid Probability. expected numbers between 0 & 1");
+        Chance chance = Chance.createChance(2);
     }
 
     @Before
@@ -41,16 +47,16 @@ public class ChanceTest {
     }
 
     @Test
-    public void subtract_should_subtract_chance_value_from_provided_value() throws InvalidProbabilityException {
+    public void subtract_should_be_able_to_substract_two_different_chances() throws InvalidProbabilityException {
         Chance otherChance = chance.subtract(1);
         assertTrue(chance.equals(otherChance));
     }
 
     @Test
-    public void add_should_add_two_chance_object_value_and_return_back_added_chance_objcet() throws InvalidProbabilityException {
-        Chance otherChance = Chance.createChance(0.75);
+    public void add_should_be_able_to_add_two_different_chances() throws InvalidProbabilityException {
+        Chance otherChance = Chance.createChance(0.2);
         Chance addedChance = this.chance.add(otherChance);
-        Chance expected = Chance.createChance(0.375);
+        Chance expected = Chance.createChance(0.1);
         assertTrue(expected.equals(addedChance));
     }
 }

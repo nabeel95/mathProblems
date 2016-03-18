@@ -5,11 +5,11 @@ import exception.InvalidProbabilityException;
 
 public class Probability {
 
-    private final int favourable;
+    private final int favourableOutcome;
     private final int totalOutcome;
 
     private Probability(int favourable, int totalOutcome) {
-        this.favourable = favourable;
+        this.favourableOutcome = favourable;
         this.totalOutcome = totalOutcome;
     }
 
@@ -18,7 +18,7 @@ public class Probability {
     }
 
     public Chance getOccuringProbability() throws InvalidProbabilityException {
-        double chances = (double) favourable / (double) totalOutcome;
+        double chances = (double) favourableOutcome / (double) totalOutcome;
         return Chance.createChance(chances);
     }
 
@@ -36,5 +36,6 @@ public class Probability {
         Chance chanceOfGettingSameEvent = getProbabilityOfGettingSameEvent();
         return chanceOfGettingSameEvent.subtract(1);
     }
+
 
 }

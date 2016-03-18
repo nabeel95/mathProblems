@@ -8,34 +8,34 @@ import static org.junit.Assert.assertTrue;
 
 public class ProbabilityTest {
     @Test
-    public void probability_should_calculate_chance_of_tail_getting_when_flipping_a_coin() throws InvalidProbabilityException {
+    public void probability_gives_probability_of_occuring_tail_while_single_coin_is_tossed_once() throws InvalidProbabilityException {
         Probability probabilityCalculator = Probability.create(1,2);
-        Chance chanceOfEventOccurring = probabilityCalculator.getOccuringProbability();
+        Chance chanceOfOccurence = probabilityCalculator.getOccuringProbability();
         Chance chance = Chance.createChance(0.5);
-        assertTrue(chanceOfEventOccurring.equals(chance));
+        assertTrue(chanceOfOccurence.equals(chance));
     }
 
     @Test
-    public void probability_should_calculate_chance_of_not_tail_getting_when_flipping_a_coin() throws InvalidProbabilityException {
+    public void probability_gives_probability_of_occuring_head_while_single_coin_is_tossed_once() throws InvalidProbabilityException {
         Probability probabilityCalculator = Probability.create(1,2);
-        Chance chanceOfNotEventOccurring = probabilityCalculator.getNotOccuringProbability();
+        Chance chanceOfNotOccurring = probabilityCalculator.getNotOccuringProbability();
         Chance chance = Chance.createChance(0.5);
-        assertTrue(chanceOfNotEventOccurring.equals(chance));
+        assertTrue(chanceOfNotOccurring.equals(chance));
     }
 
     @Test
-    public void probability_should_calculate_chance_of_both_getting_tail_when_flipping_two_coins() throws InvalidProbabilityException {
+    public void probability_gives_probability_of_occuring_head_while_two_coins_are_tossed() throws InvalidProbabilityException {
         Probability probabilityCalculator = Probability.create(2,4);
-        Chance chanceOfEventOccurring = probabilityCalculator.getProbabilityOfGettingSameEvent();
+        Chance chanceOfOccurring = probabilityCalculator.getProbabilityOfGettingSameEvent();
         Chance chance = Chance.createChance(0.25);
-        assertTrue(chanceOfEventOccurring.equals(chance));
+        assertTrue(chanceOfOccurring.equals(chance));
     }
 
     @Test
     public void probability_should_calculate_chance_of_getting_atleast_one_tail_when_flipping_two_coins() throws InvalidProbabilityException {
         Probability probabilityCalculator = Probability.create(2,4);
-        Chance chanceOfEventOccurring = probabilityCalculator.getProbabilityOfGettingAtLeastOneEvent();
+        Chance chanceOfOccurring = probabilityCalculator.getProbabilityOfGettingAtLeastOneEvent();
         Chance chance = Chance.createChance(0.75);
-        assertTrue(chanceOfEventOccurring.equals(chance));
+        assertTrue(chanceOfOccurring.equals(chance));
     }
 }

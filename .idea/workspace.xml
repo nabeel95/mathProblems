@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9151075-6ff6-467b-ac51-b7a4dadc03af" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/nabeel.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/exception/InvalidProbabilityException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/probability/Chance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/probability/Probability.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ChanceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/ProbabilityTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/measurement/Centimeters.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/measurement/Inch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/measurement/Unit.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/UnitComparisonTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/exception/InvalidProbabilityException.class" afterPath="$PROJECT_DIR$/out/production/exception/InvalidProbabilityException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/probability/Chance.class" afterPath="$PROJECT_DIR$/out/production/probability/Chance.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/probability/Probability.class" afterPath="$PROJECT_DIR$/out/production/probability/Probability.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/ChanceTest.class" afterPath="$PROJECT_DIR$/out/test/ChanceTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/ProbabilityTest.class" afterPath="$PROJECT_DIR$/out/test/ProbabilityTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO" afterPath="$PROJECT_DIR$/TODO" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/exception/InvalidProbabilityException.java" afterPath="$PROJECT_DIR$/src/exception/InvalidProbabilityException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/probability/Chance.java" afterPath="$PROJECT_DIR$/src/probability/Chance.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/probability/Probability.java" afterPath="$PROJECT_DIR$/src/probability/Probability.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ChanceTest.java" afterPath="$PROJECT_DIR$/test/ChanceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ProbabilityTest.java" afterPath="$PROJECT_DIR$/test/ProbabilityTest.java" />
     </list>
     <ignored path="mathProblems.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,6 +29,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/mathProblems$UnitComparisonTest.coverage" NAME="UnitComparisonTest Coverage Results" MODIFIED="1458295228285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -31,58 +41,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Probability.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/probability/Probability.java">
+      <file leaf-file-name="Unit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/measurement/Unit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5527638">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProbabilityTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ProbabilityTest.java">
+      <file leaf-file-name="UnitComparisonTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/UnitComparisonTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChanceTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ChanceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RectangleTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/RectangleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chance.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
+      <file leaf-file-name="Feet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/measurement/Feet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding>
-                <element signature="e#154#155#0" expanded="true" />
-                <element signature="e#189#190#0" expanded="true" />
+                <element signature="e#114#115#0" expanded="true" />
+                <element signature="e#148#149#0" expanded="true" />
+                <element signature="e#205#206#0" expanded="true" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#380#381#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Centimeters.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/measurement/Centimeters.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="e#130#131#0" expanded="true" />
+                <element signature="e#164#165#0" expanded="true" />
+                <element signature="e#222#223#0" expanded="true" />
+                <element signature="e#260#261#0" expanded="true" />
+                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Inch.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/measurement/Inch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.32921812">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#119#120#0" expanded="true" />
+                <element signature="e#153#154#0" expanded="true" />
+                <element signature="e#211#212#0" expanded="true" />
+                <element signature="e#251#252#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,6 +117,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -117,14 +142,22 @@
         <option value="$PROJECT_DIR$/src/rectangle/Rectangle.java" />
         <option value="$PROJECT_DIR$/src/square/Square.java" />
         <option value="$PROJECT_DIR$/src/probability/Coin.java" />
-        <option value="$PROJECT_DIR$/TODO" />
-        <option value="$PROJECT_DIR$/src/exception/InvalidProbabilityException.java" />
-        <option value="$PROJECT_DIR$/src/probability/Chance.java" />
         <option value="$PROJECT_DIR$/src/probability/ProbabilityCalculator.java" />
         <option value="$PROJECT_DIR$/test/ProbabilityCalculatorTest.java" />
-        <option value="$PROJECT_DIR$/test/ProbabilityTest.java" />
-        <option value="$PROJECT_DIR$/src/probability/Probability.java" />
+        <option value="$PROJECT_DIR$/src/exception/InvalidProbabilityException.java" />
         <option value="$PROJECT_DIR$/test/ChanceTest.java" />
+        <option value="$PROJECT_DIR$/src/probability/Probability.java" />
+        <option value="$PROJECT_DIR$/test/ProbabilityTest.java" />
+        <option value="$PROJECT_DIR$/src/probability/Chance.java" />
+        <option value="$PROJECT_DIR$/src/measurement/LengthComparison.java" />
+        <option value="$PROJECT_DIR$/test/LengthComparisonTest.java" />
+        <option value="$PROJECT_DIR$/src/measurement/Length.java" />
+        <option value="$PROJECT_DIR$/TODO" />
+        <option value="$PROJECT_DIR$/src/measurement/Unit.java" />
+        <option value="$PROJECT_DIR$/src/measurement/Centimeters.java" />
+        <option value="$PROJECT_DIR$/src/measurement/Inch.java" />
+        <option value="$PROJECT_DIR$/test/UnitComparisonTest.java" />
+        <option value="$PROJECT_DIR$/src/measurement/Feet.java" />
       </list>
     </option>
   </component>
@@ -258,25 +291,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="probability" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mathProblems" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mathProblems" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exception" />
+              <option name="myItemId" value="measurement" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -293,28 +308,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.ChanceTest">
-    <configuration default="false" name="All in mathProblems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="mathProblems" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.UnitComparisonTest (1)">
     <configuration default="false" name="ProbabilityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="mathProblems" />
@@ -324,27 +318,6 @@
       <option name="MAIN_CLASS_NAME" value="ProbabilityTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ProbabilityTest.calculateLeastProbabilityShouldGiveLeastProbabilityOfOccurenceWhenTwoCoinsTossed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="mathProblems" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProbabilityTest" />
-      <option name="METHOD_NAME" value="calculateLeastProbabilityShouldGiveLeastProbabilityOfOccurenceWhenTwoCoinsTossed" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -378,13 +351,55 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ProbabilityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="UnitComparisonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="mathProblems" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProbabilityTest" />
+      <option name="MAIN_CLASS_NAME" value="UnitComparisonTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UnitComparisonTest.one_inch_should_be_equal_to_2Point_54_centimeters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="mathProblems" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UnitComparisonTest" />
+      <option name="METHOD_NAME" value="one_inch_should_be_equal_to_2Point_54_centimeters" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UnitComparisonTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="mathProblems" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UnitComparisonTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -667,19 +682,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All in mathProblems" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ProbabilityTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ProbabilityTest.calculateLeastProbabilityShouldGiveLeastProbabilityOfOccurenceWhenTwoCoinsTossed" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ChanceTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ProbabilityTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ProbabilityTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ChanceTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UnitComparisonTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UnitComparisonTest.one_inch_should_be_equal_to_2Point_54_centimeters" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UnitComparisonTest (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ChanceTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ProbabilityTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ProbabilityTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in mathProblems" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ProbabilityTest.calculateLeastProbabilityShouldGiveLeastProbabilityOfOccurenceWhenTwoCoinsTossed" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UnitComparisonTest (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UnitComparisonTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UnitComparisonTest.one_inch_should_be_equal_to_2Point_54_centimeters" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ChanceTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ProbabilityTest" />
       </list>
     </recent_temporary>
   </component>
@@ -694,35 +709,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChanceTest - 2016.03.18 at 10h 26m 43s.xml">
-      <configuration name="ChanceTest" configurationId="JUnit" />
+    <history-entry file="UnitComparisonTest - 2016.03.18 at 15h 30m 29s.xml">
+      <configuration name="UnitComparisonTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChanceTest - 2016.03.18 at 10h 29m 50s.xml">
-      <configuration name="ChanceTest" configurationId="JUnit" />
+    <history-entry file="UnitComparisonTest - 2016.03.18 at 15h 32m 28s.xml">
+      <configuration name="UnitComparisonTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChanceTest - 2016.03.18 at 10h 29m 56s.xml">
-      <configuration name="ChanceTest" configurationId="JUnit" />
+    <history-entry file="UnitComparisonTest - 2016.03.18 at 15h 32m 47s.xml">
+      <configuration name="UnitComparisonTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProbabilityCalculatorTest - 2016.03.18 at 10h 13m 38s.xml">
-      <configuration name="ProbabilityCalculatorTest" configurationId="JUnit" />
+    <history-entry file="UnitComparisonTest_(1) - 2016.03.18 at 15h 33m 15s.xml">
+      <configuration name="UnitComparisonTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProbabilityTest - 2016.03.18 at 10h 15m 53s.xml">
-      <configuration name="ProbabilityTest" configurationId="JUnit" />
+    <history-entry file="UnitComparisonTest_one_inch_should_be_equal_to_2Point_54_centimeters - 2016.03.18 at 15h 25m 05s.xml">
+      <configuration name="UnitComparisonTest.one_inch_should_be_equal_to_2Point_54_centimeters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProbabilityTest - 2016.03.18 at 10h 16m 30s.xml">
-      <configuration name="ProbabilityTest" configurationId="JUnit" />
+    <history-entry file="UnitComparisonTest_one_inch_should_be_equal_to_2Point_54_centimeters - 2016.03.18 at 15h 26m 16s.xml">
+      <configuration name="UnitComparisonTest.one_inch_should_be_equal_to_2Point_54_centimeters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProbabilityTest - 2016.03.18 at 10h 18m 19s.xml">
-      <configuration name="ProbabilityTest" configurationId="JUnit" />
+    <history-entry file="UnitComparisonTest_one_inch_should_be_equal_to_2Point_54_centimeters - 2016.03.18 at 15h 26m 54s.xml">
+      <configuration name="UnitComparisonTest.one_inch_should_be_equal_to_2Point_54_centimeters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProbabilityTest - 2016.03.18 at 10h 18m 36s.xml">
-      <configuration name="ProbabilityTest" configurationId="JUnit" />
+    <history-entry file="UnitComparisonTest_one_inch_should_be_equal_to_2Point_54_centimeters - 2016.03.18 at 15h 28m 21s.xml">
+      <configuration name="UnitComparisonTest.one_inch_should_be_equal_to_2Point_54_centimeters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProbabilityTest - 2016.03.18 at 10h 23m 43s.xml">
-      <configuration name="ProbabilityTest" configurationId="JUnit" />
+    <history-entry file="UnitComparisonTest_one_inch_should_be_equal_to_2Point_54_centimeters - 2016.03.18 at 15h 28m 50s.xml">
+      <configuration name="UnitComparisonTest.one_inch_should_be_equal_to_2Point_54_centimeters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProbabilityTest - 2016.03.18 at 10h 26m 36s.xml">
-      <configuration name="ProbabilityTest" configurationId="JUnit" />
+    <history-entry file="UnitComparisonTest_one_inch_should_be_equal_to_2Point_54_centimeters - 2016.03.18 at 15h 30m 17s.xml">
+      <configuration name="UnitComparisonTest.one_inch_should_be_equal_to_2Point_54_centimeters" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -736,8 +751,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24578314" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08674699" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13395415" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -794,8 +810,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#120#121#0" expanded="false" />
+            <element signature="e#203#204#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -808,58 +824,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TODO">
+    <entry file="file://$PROJECT_DIR$/test/RectangleTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/exception/InvalidProbabilityException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17391305">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#123#124#0" expanded="true" />
-            <element signature="e#183#184#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/RectangleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="e#154#155#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ChanceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ProbabilityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -868,9 +852,99 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/probability/Probability.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5527638">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ProbabilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding>
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TODO">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/measurement/Unit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/UnitComparisonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/measurement/Feet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="e#114#115#0" expanded="true" />
+            <element signature="e#148#149#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/measurement/Centimeters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/measurement/Inch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32921812">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#119#120#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
