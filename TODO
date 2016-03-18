@@ -1,6 +1,12 @@
 as a math student,I want to represent a rectangle, so that I will be able to calculate area.
 as a math student,I want to represent a rectangle, so that I will be able to calculate perimeter.
 as a math student,I want to represent a square so that I can calculate its area and perimeter.
+As a math student,I want to represent a chance of getting tails when flipping a coin.
+As a math student,I want to represent a chance of not getting tails when flipping a coin.
+As a math student,I want to represent a chance of getting tails when flipping two coins.
+As a math student,I want to represent a chance of getting at least one tails when flipping two coins.
+
+formula = P(A||B) = !(!P(A) && !P(B))
 
 
   * I have to create a class named rectangle which can construct a rectangle with given height and width.
