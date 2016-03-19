@@ -2,31 +2,22 @@ package unit.length;
 
 import exception.NonPositiveNumberException;
 
-public class MilliMeter implements Unit{
-    private double value;
+public class MilliMeter extends LengthUnit {
 
-    private MilliMeter(double value) {
-        this.value = value;
+    private double multiplier;
+
+    private MilliMeter(double value, double multiplier) {
+        super(value, 1);
+        this.multiplier = multiplier;
     }
 
     public static MilliMeter create(double value) throws NonPositiveNumberException {
         if (value < 0)
             throw new NonPositiveNumberException();
-        return new MilliMeter(value);
+        return new MilliMeter(value, 1);
     }
-
     @Override
-    public double convertIntoBaseUnitAsMm() {
-        return value;
-    }
-
-    @Override
-    public boolean isEqualTo(Unit unit) {
-        return unit.convertIntoBaseUnitAsMm() == convertIntoBaseUnitAsMm();
-    }
-
-    @Override
-    public Unit addWith(Unit unit) {
-        return new MilliMeter(unit.convertIntoBaseUnitAsMm() + convertIntoBaseUnitAsMm());
+    public LengthUnit addWith(LengthUnit unit) {
+        return new MilliMeter(unit.convertIntoBaseUnit() + convertIntoBaseUnit(), multiplier);
     }
 }

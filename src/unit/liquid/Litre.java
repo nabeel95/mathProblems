@@ -2,27 +2,21 @@ package unit.liquid;
 
 import exception.NonPositiveNumberException;
 
-public class Litre implements Unit {
-    private double value;
+public class Litre extends LiquidUnit {
+    private double multiplier;
 
-    private Litre(double value) {
-
-        this.value = value;
+    private Litre(double value, double multiplier) {
+        super(value, multiplier);
+        this.multiplier = multiplier;
     }
 
     public static Litre create(double value) throws NonPositiveNumberException {
         if (value < 0)
             throw new NonPositiveNumberException();
-        return new Litre(value);
+        return new Litre(value, 1000);
     }
-
     @Override
-    public double convertIntoBaseUnitAsLtr() {
-        return 1000 * value;
-    }
-
-    @Override
-    public boolean isEqualTo(Unit unit) {
-        return unit.convertIntoBaseUnitAsLtr() == convertIntoBaseUnitAsLtr();
+    public LiquidUnit addWith(LiquidUnit unit) {
+        return new Litre((unit.convertIntoBaseUnit() + convertIntoBaseUnit())/multiplier, multiplier);
     }
 }

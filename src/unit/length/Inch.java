@@ -2,31 +2,22 @@ package unit.length;
 
 import exception.NonPositiveNumberException;
 
-public class Inch implements Unit {
-    private final double value;
+public class Inch extends LengthUnit {
+    private double multiplier;
 
-    private Inch(double value) {
-        this.value = value;
+    private Inch(double value, double multiplier) {
+        super(value, multiplier);
+        this.multiplier = multiplier;
     }
 
     public static Inch create(double value) throws NonPositiveNumberException {
         if (value < 0)
             throw new NonPositiveNumberException();
-        return new Inch(value);
+        return new Inch(value, 25.4);
     }
 
     @Override
-    public double convertIntoBaseUnitAsMm() {
-        return this.value * 25.4;
-    }
-
-    @Override
-    public boolean isEqualTo(Unit unit) {
-        return unit.convertIntoBaseUnitAsMm() == convertIntoBaseUnitAsMm();
-    }
-
-    @Override
-    public Unit addWith(Unit unit) {
-        return new Inch(Math.ceil((unit.convertIntoBaseUnitAsMm() + convertIntoBaseUnitAsMm())/25.4));
+    public LengthUnit addWith(LengthUnit unit) {
+        return new Inch(Math.ceil((unit.convertIntoBaseUnit() + convertIntoBaseUnit()) / multiplier), multiplier);
     }
 }

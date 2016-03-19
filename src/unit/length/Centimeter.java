@@ -2,32 +2,22 @@ package unit.length;
 
 import exception.NonPositiveNumberException;
 
-public class Centimeter implements Unit {
+public class Centimeter extends LengthUnit {
 
-    private double value;
+    private double multiplier;
 
-    private Centimeter(double value) {
-        this.value = value;
+    private Centimeter(double value, double multiplier) {
+        super(value, multiplier);
+        this.multiplier = multiplier;
     }
 
     public static Centimeter create(double value) throws NonPositiveNumberException {
         if (value < 0)
             throw new NonPositiveNumberException();
-        return new Centimeter(value);
+        return new Centimeter(value, 10);
     }
-
     @Override
-    public double convertIntoBaseUnitAsMm() {
-        return this.value * 10;
-    }
-
-    @Override
-    public boolean isEqualTo(Unit unit) {
-        return unit.convertIntoBaseUnitAsMm() == convertIntoBaseUnitAsMm();
-    }
-
-    @Override
-    public Unit addWith(Unit unit) {
-        return new Centimeter(Math.ceil((unit.convertIntoBaseUnitAsMm() + convertIntoBaseUnitAsMm())/10));
+    public LengthUnit addWith(LengthUnit unit) {
+        return new Centimeter(Math.ceil((unit.convertIntoBaseUnit() + convertIntoBaseUnit())/multiplier), multiplier);
     }
 }
