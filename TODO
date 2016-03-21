@@ -10,9 +10,10 @@ As a math student,I want to compare lengths in inches and cm.
 As a math student,I wish to compare lengths in cm and mm.
 As a math student,I wish to compare volumes in liter and gallon.
 As a math student,I want to be able to add two lengths in inches.
-As a math student,I want to be able to add two length in any unit and the standerd output in inches.
+As a math student,I want to be able to add two length in any measurement and the standerd output in inches.
 As a math student(not a good one), I wish to compare volumes and length
-As a math student, I want to be able to add two volumes in any unit and the std. is litre
+As a math student, I want to be able to add two volumes in any measurement and the std. is litre.
+As a math student , I want to call out errors in a question paper that adds litres with inches.
 
  * formula = (1 gallon = 3.78 litres)
  * formula for probability = P(A||B) = !(!P(A) && !P(B))
