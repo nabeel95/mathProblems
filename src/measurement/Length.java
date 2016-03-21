@@ -2,10 +2,10 @@ package measurement;
 
 public enum Length implements Unit {
 
-    feet(12 * 25.4) ,
+    feet(12 * 25.4),
     inch(25.4),
     centimeter(10),
-    millimeter(1) ;
+    millimeter(1);
 
     private double baseFactor;
 
