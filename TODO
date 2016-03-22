@@ -37,11 +37,13 @@ Context -
         These balls are very powerful and have to be stored safely when not in use.
 
 1- As a provider of service that lets wizards store their balls , I'd like a bag that can hold a maximum of 12 balls.
-2- As a provider of service that lets wizards store their balls ,I'd like a bag that allows a wizard to only put in a maximum of 3 green balls.
+2- As a provider of service that lets wizards store their balls , I'd like a bag that allows a wizard to only put in a maximum of 3 green balls.
 3- As a provider of service that lets wizards store their balls , I'd like a bag that prevents a wizard from adding double the number of red balls than green balls.
 Rule- Balloria law is very strict about the placement of balls.
     If any of the balls violate the any of the placememnt rules while being placed next to each other,
     the balls will explode and destroy Balloria.
 4- As a provider of service that lets wizards store their balls , I have to report any attempt that violates any of the placement rules.
 5- As a provider of service that lets wizards store their balls , I'd like a bag that lets a wizard add as many blue balls as a bag can hold.
+6- As a provider of service that lets wizards store their balls , I'd like to limit the number of yellow balls to only 40% number of balls in the bag.
+7- As a provider of service that lets wizards store their balls , I'd like to show my customers a summary of their bag at any given time.
 ----------------------------------------------------------------------------------------

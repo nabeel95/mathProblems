@@ -3,7 +3,8 @@ package kingdomofballario;
 import KingdomOfBallario.Bag;
 import KingdomOfBallario.Ball;
 import KingdomOfBallario.Colour;
-import exception.BagIsFullException;
+import exception.BagRuleException;
+import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -22,7 +23,7 @@ public class BagTest {
         bag.addBall(new Ball(Colour.GREEN));
         bag.addBall(new Ball(Colour.GREEN));
 
-        thrown.expect(BagIsFullException.class);
+        thrown.expect(BagRuleException.class);
         thrown.expectMessage("Bag rule doesn't allow 3 < green balls");
         bag.addBall(new Ball(Colour.GREEN));
 
@@ -30,18 +31,19 @@ public class BagTest {
     }
 
     @Test
-    public void bag_should_not_allow_to_hold_3_red_when_greens_are_2() throws BagIsFullException {
+    public void bag_should_not_allow_to_keep_3_red_balls_when_greens_are_2() throws BagRuleException {
 
         Bag bag = new Bag();
 
         bag.addBall(new Ball(Colour.GREEN));
         bag.addBall(new Ball(Colour.GREEN));
+
         bag.addBall(new Ball(Colour.RED));
         bag.addBall(new Ball(Colour.RED));
         int expectedSize = bag.addBall(new Ball(Colour.RED));
 
         assertEquals(5, expectedSize);
-        thrown.expect(BagIsFullException.class);
+        thrown.expect(BagRuleException.class);
         thrown.expectMessage("Bag rule doesn't allow more or equal to double of green");
         bag.addBall(new Ball(Colour.RED));
 
@@ -49,7 +51,7 @@ public class BagTest {
 
     @Test
     public void bag_Should_not_allow_red_ball_in_beginning() {
-        thrown.expect(BagIsFullException.class);
+        thrown.expect(BagRuleException.class);
         thrown.expectMessage("Bag rule doesn't allow more or equal to double of green");
         Bag bag = new Bag();
 
@@ -62,7 +64,7 @@ public class BagTest {
         bag.addBall(new Ball(Colour.GREEN));
         bag.addBall(new Ball(Colour.RED));
 
-        thrown.expect(BagIsFullException.class);
+        thrown.expect(BagRuleException.class);
         thrown.expectMessage("Bag rule doesn't allow more or equal to double of green");
 
         bag.addBall(new Ball(Colour.RED));
@@ -73,6 +75,7 @@ public class BagTest {
         Bag bag = new Bag();
         bag.addBall(new Ball(Colour.GREEN));
         bag.addBall(new Ball(Colour.GREEN));
+
         bag.addBall(new Ball(Colour.RED));
         bag.addBall(new Ball(Colour.RED));
         bag.addBall(new Ball(Colour.RED));
@@ -86,8 +89,40 @@ public class BagTest {
         int expectedSize = bag.addBall(new Ball(Colour.BLUE));
         assertEquals(12, expectedSize);
 
-        thrown.expect(BagIsFullException.class);
+        thrown.expect(BagRuleException.class);
+        thrown.expectMessage("Bag is full");
         bag.addBall(new Ball(Colour.BLUE));
+    }
+
+    @Test
+    public void add_should_throw_exception_when_more_than_40_percent_yellow_balls_being_added() {
+        Bag bag = new Bag();
+        bag.addBall(new Ball(Colour.GREEN));
+        bag.addBall(new Ball(Colour.GREEN));
+        bag.addBall(new Ball(Colour.RED));
+        bag.addBall(new Ball(Colour.RED));
+        bag.addBall(new Ball(Colour.RED));
+        bag.addBall(new Ball(Colour.YELLOW));
+        bag.addBall(new Ball(Colour.YELLOW));
+
+        thrown.expect(BagRuleException.class);
+        thrown.expectMessage("Bag rule doesn't allow more than 40% of yellow balls of total balls");
+        bag.addBall(new Ball(Colour.YELLOW));
+    }
+
+    @Test
+    public void bagSummary_should_give_summary_with_numbers_of_each_colour_balls() {
+        Bag bag = new Bag();
+        bag.addBall(new Ball(Colour.GREEN));
+        bag.addBall(new Ball(Colour.GREEN));
+        bag.addBall(new Ball(Colour.RED));
+        bag.addBall(new Ball(Colour.RED));
+        bag.addBall(new Ball(Colour.RED));
+        bag.addBall(new Ball(Colour.YELLOW));
+        bag.addBall(new Ball(Colour.YELLOW));
+
+        String expectedSummary = "Balls : 7\nGreen : 2\nRed : 3\nYellow : 2\nBlue : 0";
+        Assert.assertEquals(expectedSummary,bag.showSummary());
 
     }
 }

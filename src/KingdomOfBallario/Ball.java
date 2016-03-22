@@ -1,6 +1,5 @@
 package KingdomOfBallario;
 
-import javax.swing.plaf.ColorUIResource;
 
 public class Ball {
 
