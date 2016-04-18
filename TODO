@@ -14,7 +14,7 @@ As a math student,I want to be able to add two length in any measurement and the
 As a math student(not a good one), I wish to compare volumes and length
 As a math student, I want to be able to add two volumes in any measurement and the std. is litre.
 As a math student , I want to call out errors in a question paper that adds litres with inches.
-As a investment banker, I would like to compare two currencies.(1 us dollars = 67 rs.)
+As a investment banker, I would like to compare two currencies.(1 us doll = 67 rs.)
 
  * formula = (1 gallon = 3.78 litres)
  * formula for probability = P(A||B) = !(!P(A) && !P(B))
